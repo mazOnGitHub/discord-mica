@@ -13,7 +13,7 @@ Yard - A Green Gradient with Green Accent <br/>
 # How to Install
 <br/>
 - Install BetterDiscord at https://betterdiscord.app/ <br/>
-- Go to Settings,locate "Themes" tab <br/>
+- Go to Settings, and locate "Themes" tab <br/>
 - Open Theme Folder <br/>
 - Extract Themes of choice into Theme Folder <br/>
 - Enable Theme(s)
