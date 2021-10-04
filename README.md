@@ -65,4 +65,4 @@ Open the MicaCustom.theme.css file you have earlier. <br/><br/>
 All you should need to do now is replace each link to its corresponding variable!<br/>
 ("--background-primary" gets the imgur link corresponding to "primary.png", etc.)<br/><br/>
 
-That should be it!
+Save, Import, and Install! That should be it!
