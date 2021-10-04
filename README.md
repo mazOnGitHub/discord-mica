@@ -8,4 +8,4 @@ Warm - A Red/Orange/Purple Gradient with a Pinkish Accent <br/>
 Cold - A less Green-ish Blue theme with a Blue Accent <br/>
 Yard - A Green Gradient with Green Accent <br/>
 
-[<img src="https://i.imgur.com/vFfGdZS.png">]()
+[<img src="https://i.imgur.com/vFfGdZS.png">](https://github.com/MazeoGH/discord-mica/releases/tag/1.0.0)
