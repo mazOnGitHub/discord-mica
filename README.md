@@ -9,3 +9,11 @@ Cold - A less Green-ish Blue theme with a Blue Accent <br/>
 Yard - A Green Gradient with Green Accent <br/>
 
 [<img src="https://i.imgur.com/vFfGdZS.png">](https://github.com/MazeoGH/discord-mica/releases/tag/1.0.0)
+
+# How to Install
+<br/>
+- Install [BetterDiscord](https://betterdiscord.app/) <br/>
+- Go to Settings,locate "Themes" tab <br/>
+- Open Theme Folder <br/>
+- Extract Themes of choice into Theme Folder <br/>
+- Enable Theme(s)
