@@ -5,14 +5,37 @@
 * @author Mazeo
 */
 
+@import url(//fonts.cdnfonts.com/css/segoe-ui-variable);
+@import url(//fonts.cdnfonts.com/css/segoe-ui-variable-static-display?styles=104046);
+
 .appMount-3lHmkl, body {
 
 background: var(--background-tertiary);
 background-size:contain 1920px 1080px!important;
 background-position-x: left!important;
-	
+}
+/*	
+font-family: 'Segoe UI Variable Static Display', sans-serif;
+font-family: 'Segoe UI Variable Static Small', sans-serif;
+font-family: 'Segoe UI Variable Static Text', sans-serif;
+}
+*/
+
+@font-face {
+    font-family: "Segoe UI Variable Static Display 700";
+    src: url(//fonts.cdnfonts.com/css/segoe-ui-variable-static-display?styles=104046);
+    font-variation-settings: 'wght' 200, 'opsz' 100;
+    font-size: x-large;
+
 }
 
+
+:root {
+    --font-primary: 'Segoe UI Variable Static Text', sans-serif;
+    --font-display: font-family: "Segoe UI Variable Static Display 700", sans-serif;
+    --font-code: Consolas,"Andale Mono WT","Andale Mono","Lucida Console","Lucida Sans Typewriter","DejaVu Sans Mono","Bitstream Vera Sans Mono","Liberation Mono","Nimbus Mono L",Monaco,"Courier New",Courier,monospace;
+    --font-headline: 'Segoe UI Variable',sans-serif;
+}
 
 .theme-dark {
 
@@ -74,7 +97,10 @@ background-position-x: left!important;
 
 --accent-primary: #DB9EE5;
 --accent-secondary: #DB9EE5;
---accent-tertiary: #DB9EE5;
+--accent-tertiary: #DB9EE5; 
+
+--accent-primary-rgba: rgb(219, 158, 229);
+
 }
 
 .platform-win .sidebar-2K8pFh{
@@ -84,7 +110,7 @@ border-radius:8px!important;
 
 }
 
-.platform-win .scroller-1Bvpku, .header-8ilj5e, .container-1r6BKw.themed-ANHk51, .members-1998pB, .members-1998pB>div {
+.platform-win .scroller-1Bvpku, .header-8ilj5e, .container-1r6BKw.themed-ANHk51, .members-1998pB, .members-1998pB {
 	
 	/* background-size:contain 1920px 1080px!important; */
 	
@@ -135,6 +161,10 @@ border-radius:8px!important;
     background-color: var(--background-modifier-selected);
 }
 
+.selected-1Tbx07, .theme-dark .selected-1Tbx07 {
+    background-color: var(--background-modifier-hover);
+}
+
 .theme-dark .option-96V44q:after, .theme-dark .option-96V44q.selected-rZcOL-:after {
     background: rgba(0,0,0,0);
 }
@@ -182,7 +212,7 @@ border-right-color: rgba(255, 255, 255, 0.067);
 
 }
 
-.theme-dark .spoilerText-3p6IlD, .browser-2NpbWS container-7uh5fX {
+.theme-dark .spoilerText-3p6IlD, .browser-2NpbWS .container-7uh5fX {
 
      border: solid 1px rgba(255, 255, 255, 0.067);
 
@@ -196,7 +226,7 @@ border-radius: 5px
 }
 .titleBar-AC4pGV {
 	
-	background:#fff!important
+	background: #ffffff00 !important
 	
 }
 .container-1pMiXm, .wrapper-1-Fsb8, .bd-addon-list .bd-addon-header, .contentWrapper-SvZHNd, .header-2k4I2o, .header-1VS4tm, .header-ykumBX, .contentColumn-2hrIYH, .contentColumnDefault-1VQkGM, .header-1TKi98 {
@@ -218,7 +248,7 @@ background-color:#222223;
     border-left-width: 1px;
 }
 
-.body-r6_QPy, .topSection-y3p-_D, .popout-APcvZm, .theme-dark .spoilerText-3p6IlD, .message-1Ng5AR, .scroller-3BxosC, .quickswitcher-3JagVE, .theme-dark .root-1gCeng, .nav-p1yAyi, .container-1r6BKw, .container-1r6BKw.themed-ANHk51, .guildSidebar-2OCzWB, .container-3baos1, .footer-1kmXd4, .section-2gLsgF, .content-98HsJk, .scroller-36cuUh, .titleBar-AC4pGV, .searchBar-3dMhjb, .content-2CeOl_, .scroller-tlc3kG, .wrapperAudio-1jDe0Q, .scroller-1Bvpku, .container-2I9Hud, .inspector-S2gM3e,  .file-input, .popoutInfo-pKbpvG, .accountProfileCard-1XCH88, .wrapper-2aW0bm, .footer-3UKYOU, .body-3HBlXn, .bodyInnerWrapper-26fQXj, .headerTop-3vNv-a {
+.body-r6_QPy, .topSection-y3p-_D, .popout-APcvZm, .theme-dark .spoilerText-3p6IlD, .message-1Ng5AR, .scroller-3BxosC, .quickswitcher-3JagVE, .theme-dark .root-1gCeng, .nav-p1yAyi, .container-1r6BKw, .container-1r6BKw.themed-ANHk51, .guildSidebar-2OCzWB, .container-3baos1, .footer-1kmXd4, .section-2gLsgF, .content-98HsJk, .scroller-36cuUh, .searchBar-3dMhjb, .content-2CeOl_, .scroller-tlc3kG, .wrapperAudio-1jDe0Q, .scroller-1Bvpku, .container-2I9Hud, .inspector-S2gM3e,  .file-input, .popoutInfo-pKbpvG, .accountProfileCard-1XCH88, .wrapper-2aW0bm, .footer-3UKYOU, .body-3HBlXn, .bodyInnerWrapper-26fQXj, .headerTop-3vNv-a, .scrollerBase-289Jih {
 
 background: var(--background-tertiary)!important;
 
@@ -229,18 +259,60 @@ background: var(--background-secondary);
 border: solid 1px rgba(255, 255, 255, 0.067)!important;
 }
 
-.selected-aXhQR6 .layout-2DM8Md, .clickable-1JJAn8, .layout-2DM8Md, .wrapper-2jXpOf .content-1x5b-n, .wrapper-2jXpOf .content-1x5b-n, .content-1x5b-n {
+.selected-aXhQR6 .layout-2DM8Md, .clickable-1JJAn8, .layout-2DM8Md, .wrapper-2jXpOf .content-1x5b-n, .wrapper-2jXpOf .content-1x5b-n, .content-1x5b-n, .peopleListItem-2nzedh, .item-3HknzM, .item-PXvHYJ, .themed-OHr7kt, .button-14-BFJ, .embedVideo-3nf0O9, .video-8eMOth {
     transition: 1s;
     transition-timing-function: cubic-bezier(0.1, 0.9, 0.2, 1);
+}
+
+.embedVideo-3nf0O9:hover, .image-1tIMwV, .modal-qgFCbT {
+    border-radius: 8px;
+}
+
+.lookBlank-3eh9lL {
+    border-radius: 2px;
+}
+.button-14-BFJ:hover {
+    border-radius: 8px;
+    border-width: 6px;
+    border-color: #DB9EE5;
 }
 
 .content-1LAB8Z {
     padding-top: 16px;
 }
+.withFrame-haYltI {
+    margin-top: 0px;
+    padding-top: 4px;
+}
+
+.audioControls-2HsaU6, .videoControls-2kcYic {
+    backdrop-filter: blur(40px);
+
+}
+
+.avatar-VxgULZ, .avatarSpeaking-2c8-9i {
+    width: 100%;
+    height: 100%;
+    grid-area: 1/1;
+}
 
 .note-1oo11U {
 	margin-left: 0px;
 	margin-right: 0px;
+}
+
+.usernameSpeaking-RmltQx {
+    color: var(--accent-primary);
+    filter:saturate(300%);
+
+}
+
+.avatarSpeaking-2IGMRN {
+    box-shadow: 0px 0px 15px rgba(var(--accent-primary-rgba), 1);
+    filter:saturate(200%);
+    transition: 0.2s;
+    transition-timing-function: cubic-bezier(0.1, 0.9, 0.2, 1);
+    
 }
 
 .profileBannerPreview-3_l0Wd, .accountProfileCard-1XCH88 {
